@@ -1,54 +1,159 @@
-#grad1 {
-  height: 1080px;
-  background-image: linear-gradient(#FECAB2, #F5B4BC, #FA938B, #FF6E56); /* Standard syntax (must be last) */
+* {
+  box-sizing: border-box;
 }
 
-/* The side navigation menu */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+html, body {
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(#FECAB2, #F5B4BC, #FA938B, #FF6E56);
+  font-family: 'Futura', sans-serif;
+  margin: 0px;
+  padding: 20px;
+  color: #FC3D3D;
+  font-size: 16px;
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.header {
+  width: 100%;
+  height: 100px;
+  padding: 0 10px;
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  left: 0;
+  right: 0;
+  background-color: transparent;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
+.logo {
+  max-height: 100px;
+  float: left;
+  margin-left: 30px;
+  padding:20px 0;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding: 40px;
+  margin-right: 30px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #FC3D3D;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  align: center;
+}
+
+/*
+
+   HOME (Splash)
+
+ */
+
+ .image-container {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+ }
+
+
+
+
+/*
+
+   ABOUT
+
+ */
+ .bio-container {
+   position: absolute;
+   min-width: 50%;
+   min-height: 50%;
+ }
+
+ .about-copy {
+   position: fixed;
+   top: 440px;
+   right: 450px;
+   bottom: 0px;
+   left: 470px;
+ }
+
+.about-copy2 {
+  position: fixed;
+  top: 560px;
+  right: 450px;
+  bottom: 20px;
+  left: 100px;
+}
+
+
+
+ /*
+
+   RELEASES (Disc)
+
+ */
+
+
+
+ /*
+
+   NOISE (Media)
+
+ */
+
+
+
+
+ /*
+
+   SHOP (Merch)
+
+ */
+
+
+
+
+
+ /*
+
+   SHOWS (Tour)
+
+ */
